@@ -10,11 +10,6 @@ ul {
 
 li {
   list-style-type: none;
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: center;
-  // height: 50%;
-  // width: 50%;
 }
 
 .gallery{
@@ -101,10 +96,7 @@ li {
   border-radius: 10%;
   color: aliceblue;
   margin-top: 10px;
-}
-
-.gallery__btn {
-  display: block;
+   display: block;
   text-align: left;
   margin-right: auto;
   margin-left: auto;
@@ -133,7 +125,6 @@ button.is-hidden {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -141,11 +132,7 @@ button.is-hidden {
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  // -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
-}
-
-.material-icons {
   margin-right: 5px;
   font-size: 18px;
 }
@@ -164,11 +151,11 @@ button.is-hidden {
 }
 
 .basicLightbox__placeholder {
-    max-width: 100%;
-    transform: scale(.9);
-    transition: transform .4s ease;
-    z-index: 1;
-    will-change: transform;
+  max-width: 100%;
+  transform: scale(.9);
+  transition: transform .4s ease;
+  z-index: 1;
+  will-change: transform;
 }
 
 .basicLightbox--visible {
@@ -192,7 +179,6 @@ button.is-hidden {
 }
 
 body:after {
-  // background-image: url(/goit-js-hw-13-image-finder/background.029c11af.svg);
   content: "";
   position: fixed;
   top: 0;
@@ -204,8 +190,6 @@ body:after {
   background-position: top;
   background-size: 800px;
 }
-
-
 
 .loader-backdrop {
   position: fixed;
@@ -225,8 +209,6 @@ body:after {
   pointer-events: none;
 }
 
-
-// .lightbox.is-open  
 .js-loader-backdrop {
   opacity: 1;
   pointer-events: auto;
