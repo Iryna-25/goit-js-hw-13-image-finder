@@ -1,33 +1,14 @@
-<article class="example">
-  <h1>HTML-фрагменты</h1>
-
-  <!-- Путь к изображениям из HTML-фрагмента такой, как из файла index.html -->
-  <img src="images/demo.jpg" alt="" width="320" />
-  <p>
-    Плагин
-    <a
-      href="https://github.com/posthtml/posthtml-include"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      posthtml-include
-    </a>
-    позволяет добавлять в HTML-файлы страниц код из других HTML-файлов (фрагментов). Фрагменты
-    хранятся в папке
-    <code>src/partials</code>. Добавление происходит при компиляции файлов страниц, например
-    <code>index.html</code>.
-  </p>
-
-  <p>
-    Этот файл <code>example.html</code> &mdash; пример такого фрагмента, с разметкой определённой
-    части главной страницы. Это очень удобно при командной разработке на студенческих проектах,
-    когда в одном HTML-файле пишет несколько человек сразу.
-  </p>
-
-  <p>
-    Синтаксис добавление фрагмента в главный файл:
-    <code> &lt;include src="./partials/имя-файла.html"&gt;&lt;/include&gt; </code>
-  </p>
-
-  <div class="background"></div>
-</article>
+<div class="container container__application"> 
+  <form class="search-form" id="search-form"> 
+    <label class="input-container"> 
+      <input class="search-form__input" type="text" name="query" autocomplete="off" placeholder="Search images..."> 
+      <span class="search-form__spinner"></span> 
+    </label> 
+    <button class="search-form__btn" type="submit" data-btn="search">Find</button> 
+  </form> 
+  <ul class="gallery is-hidden js-gallery list"></ul> 
+  <button type="button" class="gallery__btn is-hidden" data-btn="loadMore" disabled=""> Load more </button> 
+  <div class="is-hidden js-loader-backdrop loader-backdrop"> 
+    <div class="gallery__spinner"></div>
+  </div>
+</div>  
