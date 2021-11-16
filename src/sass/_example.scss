@@ -152,8 +152,8 @@ button.is-hidden {
 
 .basicLightbox__placeholder {
   max-width: 100%;
-  transform: scale(.9);
-  transition: transform .4s ease;
+  transform: scale(.50);
+  transition: transform .70s ease;
   z-index: 1;
   will-change: transform;
 }
@@ -198,7 +198,7 @@ body:after {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,.6);
-  z-index: 100;
+  z-index: 300;
   transition: opacity .25s linear,visibility .25s linear;
   overflow: auto;
 }
